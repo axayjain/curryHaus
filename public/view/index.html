@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Curry Hauz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width = device-width, initial-scale = 0, user-scalable = no, minimum-scale = 1, maximum-scale = 1">
+    <link rel="stylesheet" href="../css/screen.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <img src="../images/curryHausLogo2.png">
+        <div class="contentContainer">
+            <div class="textContainer">
+                <span class="text">Hurry? Order Our Curry</span><br>
+                <span class="subText">register to get exciting offers</span>
+            </div>
+            <div class="screenContainer">
+                <!-- Templates-->
+            </div>
+        </div>
+    </div>
+
+    <!--input template-->
+    <script id="inputScreenTemplate" type="text/x-jsrender">
+        <div class="inputContainer">
+            <div class="input">
+                <input type="text" class="inputName" placeholder="enter your name">
+                <input type="Number" class="inputNumber" placeholder="enter your number">
+                <input type="Email" class="inputEmail" placeholder="enter your email">
+            </div>
+            <div class="submitButton" data-link="{on ~submitUser}">SUBMIT</div>
+        </div>
+    </script>
+
+    <!--otp Template-->
+    <script id="otpScreenTemplate" type="text/x-jsrender">
+        <div class="otpContainer">
+            <input type="Number" class="inputOtp" placeholder="enter your otp here..">
+            <div class="submitOtp" data-link="{on ~submitOtp}">SUBMIT</div>
+        </div>
+        <div class="resendOtp" data-link="{on ~resendOtp}">resend OTP?</div>
+    </script>
+
+    <!--thankyou Template-->
+    <script id="thankYouScreenTemplate" type="text/x-jsrender">
+        <div class="thankYouContainer">
+            <span>thank you </span><span class="thankYouName" style="color: green">{^{:name}}</span><span> for signing with us</span>
+        </div>
+    </script>
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/jsviews.js"></script>
+    <script type="text/javascript" src="../js/baseAkshay.js"></script>
+    <script type="text/javascript" src="../js/appConfig.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@font-face {
+  font-family: gloria;
+  src: url('../fonts/GloriaHallelujah.ttf');
+}
+@font-face {
+  font-family: cuprum;
+  src: url('../fonts/Cuprum-Regular.ttf');
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  background: #F22613;
+}
+.mainContainer .header {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  font-family: cuprum;
+  background: #22313F;
+}
+.mainContainer .header img {
+  position: relative;
+  float: left;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  width: 20rem;
+}
+.mainContainer .header .headerTitle {
+  position: relative;
+  float: left;
+  margin-left: 1rem;
+  height: 100%;
+  width: auto;
+  color: #ecf0f1;
+  text-align: left;
+  font-size: 3rem;
+  line-height: 8rem;
+}
+.mainContainer .contentContainer {
+  position: absolute;
+  bottom: 0;
+  top: 8rem;
+  font-family: cuprum;
+  width: 100%;
+  background-image: url("../images/loginBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainContainer .contentContainer .loginContainer {
+  position: absolute;
+  height: 30rem;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  background: #22313F;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .contentContainer .loginContainer .logoContainer {
+  position: relative;
+  width: 29rem;
+  height: 9.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-image: url("");
+  color: #ecf0f1;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2rem;
+}
+.mainContainer .contentContainer .loginContainer .userName {
+  position: relative;
+  width: 29rem;
+  height: 6rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  outline: none;
+  border: 0;
+  background: #34495E;
+  color: #ecf0f1;
+}
+.mainContainer .contentContainer .loginContainer .password {
+  position: relative;
+  width: 29rem;
+  height: 6rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  outline: none;
+  border: 0;
+  background: #34495E;
+  color: #ecf0f1;
+}
+.mainContainer .contentContainer .loginContainer .loginButton {
+  position: relative;
+  width: 29rem;
+  height: 6rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background: #2ecc71;
+  color: #ecf0f1;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.mainContainer .contentContainer .dataBlockContainer {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 2rem;
+  bottom: 1rem;
+}
+.mainContainer .contentContainer .dataBlockContainer .collection {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  background: #22313F;
+  box-shadow: 0px 1px 3px #000000;
+}
+.mainContainer .contentContainer .dataBlockContainer .collection .collectionColumn {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 22rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 6rem;
+  color: #ecf0f1;
+}
+.mainContainer .contentContainer .dataBlockContainer .usersDataContainer {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  bottom: 0;
+  overflow: auto;
+}
+.mainContainer .contentContainer .dataBlockContainer .usersDataContainer .userInfoContainer {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin-top: .5rem;
+  background: #ecf0f1;
+  box-shadow: 0px 1px 3px #888888;
+}
+.mainContainer .contentContainer .dataBlockContainer .usersDataContainer .userInfoContainer .userInfo {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 22rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 6rem;
+  color: #22313F;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

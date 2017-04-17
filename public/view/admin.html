@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Curry Hauz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width = device-width, initial-scale = 0, user-scalable = no, minimum-scale = 1, maximum-scale = 1">
+    <link rel="stylesheet" href="../css/screen.css">
+    <link rel="stylesheet" href="../css/adminStyle.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <img src="../images/curryHausLogo2.png">
+            <div class="headerTitle">Login Panel</div>
+        </div>
+        <div class="contentContainer">
+            <!--admin login Template-->
+        </div>
+    </div>
+    <!--login screen template-->
+    <script id="loginScreenTemplate" type="text/x-jsrender">
+        <div class="loginContainer">
+            <div class="logoContainer"></div>
+            <input type="text" class="userName" placeholder="username">
+            <input type="password" class="password" placeholder="password">
+            <div class="loginButton" data-link="{on ~adminLogin}">LOGIN</div>
+        </div>
+    </script>
+    <!--data block template-->
+    <script id="dataBlockTemplate" type="text/x-jsrender">
+        <div class="dataBlockContainer">
+            <div class="collection">
+                <div class="collectionColumn">USER NAME</div>
+                <div class="collectionColumn">MAIL ADDRESS</div>
+                <div class="collectionColumn">CONTACT NUMBER</div>
+                <div class="collectionColumn">TIME</div>
+                <div class="collectionColumn">DATE</div>
+                <div class="collectionColumn">STATUS</div>
+            </div>
+            <div class="usersDataContainer">
+                {^{for users}}
+                <div class="userInfoContainer">
+                    <div class="userInfo">{^{:name}}</div>
+                    <div class="userInfo">{^{:email}}</div>
+                    <div class="userInfo">{^{:number}}</div>
+                    <div class="userInfo">{^{:time}}</div>
+                    <div class="userInfo">{^{:date}}</div>
+                    {^{if status}}
+                    <div class="userInfo">verified</div>
+                    {{else}}
+                    <div class="userInfo">not verified</div>
+                    {{/if}}
+                </div>
+                {{/for}}
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/jsviews.js"></script>
+    <script type="text/javascript" src="../js/baseAkshay.js"></script>
+    <script type="text/javascript" src="../js/appConfig.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
+</body>
+
+</html>

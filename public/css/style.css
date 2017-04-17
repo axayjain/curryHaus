@@ -1,0 +1,189 @@
+@font-face {
+  font-family: gloria;
+  src: url('../fonts/GloriaHallelujah.ttf');
+}
+@font-face {
+  font-family: cuprum;
+  src: url('../fonts/Cuprum-Regular.ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/curryHauzBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainContainer img {
+  position: absolute;
+  width: 26rem;
+  height: 6rem;
+}
+.mainContainer .contentContainer {
+  position: absolute;
+  width: 100%;
+  height: 33rem;
+  top: 15rem;
+}
+.mainContainer .contentContainer .textContainer {
+  position: absolute;
+  height: 15rem;
+  width: 100%;
+  text-align: center;
+  font-family: gloria;
+}
+.mainContainer .contentContainer .textContainer .text {
+  line-height: 5rem;
+  font-size: 4.5rem;
+  color: #ecf0f1;
+}
+.mainContainer .contentContainer .textContainer .subText {
+  line-height: 8rem;
+  font-size: 2.5rem;
+  color: #ecf0f1;
+}
+.mainContainer .contentContainer .screenContainer {
+  position: absolute;
+  bottom: 0;
+  height: 18rem;
+  width: 100%;
+}
+.mainContainer .contentContainer .screenContainer .inputContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: cuprum;
+}
+.mainContainer .contentContainer .screenContainer .inputContainer .input {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100rem;
+  height: 7rem;
+  border-radius: 0.5rem;
+  background: rgba(34, 49, 63, 0.8);
+}
+.mainContainer .contentContainer .screenContainer .inputContainer .input .inputName {
+  position: relative;
+  float: left;
+  transition: border 0.3s;
+  padding-left: 0.5rem;
+  height: 5rem;
+  width: 32rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border: none;
+  background: #ecf0f1;
+}
+.mainContainer .contentContainer .screenContainer .inputContainer .input .inputNumber {
+  position: relative;
+  float: left;
+  transition: border 0.3s;
+  height: 5rem;
+  width: 32rem;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border: none;
+  background: #ecf0f1;
+}
+.mainContainer .contentContainer .screenContainer .inputContainer .input .inputEmail {
+  position: relative;
+  float: right;
+  height: 5rem;
+  width: 32rem;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border: none;
+  background: #ecf0f1;
+}
+.mainContainer .contentContainer .screenContainer .inputContainer .submitButton {
+  position: absolute;
+  width: 10rem;
+  height: 5rem;
+  background: #F22613;
+  border-radius: .5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  color: #ecf0f1;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.mainContainer .contentContainer .screenContainer .otpContainer {
+  position: absolute;
+  height: 11rem;
+  width: 30rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(34, 49, 63, 0.8);
+  border-radius: 0.5rem;
+  font-family: cuprum;
+}
+.mainContainer .contentContainer .screenContainer .otpContainer .inputOtp {
+  position: relative;
+  height: 4rem;
+  width: 28rem;
+  padding-left: .5rem;
+  font-size: 2rem;
+  background: #ecf0f1;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border: none;
+}
+.mainContainer .contentContainer .screenContainer .otpContainer .submitOtp {
+  position: relative;
+  height: 4rem;
+  width: 28rem;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  background: #F22613;
+  color: #ecf0f1;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.mainContainer .contentContainer .screenContainer .otpContainer .submitOtp:hover {
+  background: #2ecc71;
+}
+.mainContainer .contentContainer .screenContainer .resendOtp {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: auto;
+  height: 2rem;
+  font-family: cuprum;
+  font-size: 2rem;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+.mainContainer .contentContainer .screenContainer .resendOtp:hover {
+  color: #F22613;
+}
+.mainContainer .contentContainer .screenContainer .thankYouContainer {
+  position: absolute;
+  height: 10rem;
+  width: 80rem;
+  font-family: gloria;
+  background: rgba(34, 49, 63, 0.8);
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.5rem;
+  color: #ecf0f1;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 4rem;
+}

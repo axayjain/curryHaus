@@ -1,0 +1,199 @@
+@fontStyle1: gloria;
+@fontStyle2: cuprum;
+@cloud: #ecf0f1;
+@orange: #F9690E;
+@dark: #22313F;
+@red: #F22613;
+@green: #2ecc71;
+@font-face {
+    font-family: gloria;
+    src: url('../fonts/GloriaHallelujah.ttf');
+}
+
+@font-face {
+    font-family: cuprum;
+    src: url('../fonts/Cuprum-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/curryHauzBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+        position: absolute;
+        width: 26rem;
+        height: 6rem;
+    }
+    .contentContainer {
+        position: absolute;
+        width: 100%;
+        height: 33rem;
+        top: 15rem;
+        .textContainer {
+            position: absolute;
+            height: 15rem;
+            width: 100%;
+            text-align: center;
+            font-family: @fontStyle1;
+            .text {
+                line-height: 5rem;
+                font-size: 4.5rem;
+                color: @cloud;
+            }
+            .subText {
+                line-height: 8rem;
+                font-size: 2.5rem;
+                color: @cloud;
+            }
+        }
+        .screenContainer {
+            position: absolute;
+            bottom: 0;
+            height: 18rem;
+            width: 100%;
+            .inputContainer {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                font-family: @fontStyle2;
+                .input {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 100rem;
+                    height: 7rem;
+                    border-radius: 0.5rem;
+                    background: rgba(34, 49, 63, 0.8);
+                    .inputName {
+                        position: relative;
+                        float: left;
+                        transition: border 0.3s;
+                        padding-left: 0.5rem;
+                        height: 5rem;
+                        width: 32rem;
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        border: none;
+                        background: @cloud;
+                    }
+                    .inputNumber {
+                        position: relative;
+                        float: left;
+                        transition: border 0.3s;
+                        height: 5rem;
+                        width: 32rem;
+                        padding-left: 0.5rem;
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                        border: none;
+                        background: @cloud;
+                    }
+                    .inputEmail {
+                        position: relative;
+                        float: right;
+                        height: 5rem;
+                        width: 32rem;
+                        padding-left: 0.5rem;
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                        margin-right: 1rem;
+                        border: none;
+                        background: @cloud;
+                    }
+                }
+                .submitButton {
+                    position: absolute;
+                    width: 10rem;
+                    height: 5rem;
+                    background: @red;
+                    border-radius: .5rem;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    line-height: 5rem;
+                    font-size: 2.5rem;
+                    color: @cloud;
+                    bottom: 4rem;
+                    left: 50%;
+                    transform: translate(-50%);
+                    cursor: pointer;
+                }
+            }
+            .otpContainer {
+                position: absolute;
+                height: 11rem;
+                width: 30rem;
+                left: 50%;
+                transform: translate(-50%);
+                background: rgba(34, 49, 63, 0.8);
+                border-radius: 0.5rem;
+                font-family: @fontStyle2;
+                .inputOtp {
+                    position: relative;
+                    height: 4rem;
+                    width: 28rem;
+                    padding-left: .5rem;
+                    font-size: 2rem;
+                    background: @cloud;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                    border: none;
+                }
+                .submitOtp {
+                    position: relative;
+                    height: 4rem;
+                    width: 28rem;
+                    text-align: center;
+                    line-height: 4rem;
+                    font-size: 2rem;
+                    background: @red;
+                    color: @cloud;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+                }
+                .submitOtp:hover {
+                    background: @green;
+                }
+            }
+            .resendOtp {
+                position: absolute;
+                bottom: 4rem;
+                left: 50%;
+                transform: translate(-50%);
+                width: auto;
+                height: 2rem;
+                font-family: @fontStyle2;
+                font-size: 2rem;
+                color: @cloud;
+                cursor: pointer;
+            }
+            .resendOtp:hover {
+                color: @red;
+            }
+            .thankYouContainer {
+                position: absolute;
+                height: 10rem;
+                width: 80rem;
+                font-family: @fontStyle1;
+                background: rgba(34, 49, 63, 0.8);
+                left: 50%;
+                transform: translate(-50%);
+                border-radius: 0.5rem;
+                color: @cloud;
+                text-align: center;
+                line-height: 10rem;
+                font-size: 4rem;
+            }
+        }
+    }
+}

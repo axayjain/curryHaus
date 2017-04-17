@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.div1 {
+  position: relative;
+  background: yellow;
+  float: left;
+  height: 100%;
+  width: 25rem;
+}
+.div2 {
+  position: relative;
+  background: green;
+  float: left;
+  height: 100rem;
+  width: 25rem;
+}
+.div3 {
+  position: relative;
+  background: blue;
+  float: right;
+  height: 200rem;
+  width: 25rem;
+}

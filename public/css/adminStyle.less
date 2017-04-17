@@ -1,0 +1,187 @@
+@fontStyle1: gloria;
+@fontStyle2: cuprum;
+@cloud: #ecf0f1;
+@orange: #F9690E;
+@dark: #22313F;
+@red: #F22613;
+@green: #2ecc71;
+@headerHeight: 8rem;
+@font-face {
+    font-family: gloria;
+    src: url('../fonts/GloriaHallelujah.ttf');
+}
+
+@font-face {
+    font-family: cuprum;
+    src: url('../fonts/Cuprum-Regular.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    background: @red;
+    .header {
+        position: absolute;
+        width: 100%;
+        height: @headerHeight;
+        font-family: @fontStyle2;
+        background: @dark;
+        img {
+            position: relative;
+            float: left;
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
+            width: 20rem;
+        }
+        .headerTitle {
+            position: relative;
+            float: left;
+            margin-left: 1rem;
+            height: 100%;
+            width: auto;
+            color: @cloud;
+            text-align: left;
+            font-size: 3rem;
+            line-height: @headerHeight;
+        }
+    }
+    .contentContainer {
+        position: absolute;
+        bottom: 0;
+        top: @headerHeight;
+        font-family: @fontStyle2;
+        width: 100%;
+        background-image: url("../images/loginBackground.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .loginContainer {
+            position: absolute;
+            height: 30rem;
+            top: 50%;
+            left: 50%;
+            width: 30rem;
+            background: @dark;
+            transform: translate(-50%, -50%);
+            .logoContainer {
+                position: relative;
+                width: 29rem;
+                height: 9.5rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                background-image:url("");
+                color: @cloud;
+                text-align: center;
+                line-height: 6rem;
+                font-size: 2rem;
+            }
+            .userName {
+                position: relative;
+                width: 29rem;
+                height: 6rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                font-size: 2rem;
+                padding-left: 0.5rem;
+                outline: none;
+                border: 0;
+                background: #34495E;
+                color: @cloud;
+            }
+            .password {
+                position: relative;
+                width: 29rem;
+                height: 6rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                font-size: 2rem;
+                padding-left: 0.5rem;
+                outline: none;
+                border: 0;
+                background: #34495E;
+                color: @cloud;
+            }
+            .loginButton {
+                position: relative;
+                width: 29rem;
+                height: 6rem;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                background: @green;
+                color: @cloud;
+                text-align: center;
+                line-height: 6rem;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+        .dataBlockContainer {
+            position: absolute;
+            left: 2rem;
+            right: 2rem;
+            top: 2rem;
+            bottom: 1rem;
+            .collection {
+                position: absolute;
+                width: 100%;
+                height: 6rem;
+                background: @dark;
+                box-shadow: 0px 1px 3px #000000;
+                .collectionColumn {
+                    position: relative;
+                    float: left;
+                    height: 100%;
+                    width: 22rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    line-height: 6rem;
+                    color: @cloud;
+                }
+            }
+            .usersDataContainer {
+                position: absolute;
+                top: 6rem;
+                width: 100%;
+                bottom: 0;
+                overflow: auto;
+                .userInfoContainer {
+                    position: relative;
+                    width: 100%;
+                    height: 6rem;
+                    margin-top: .5rem;
+                    background: @cloud;
+                    box-shadow: 0px 1px 3px #888888;
+                    .userInfo {
+                        position: relative;
+                        float: left;
+                        height: 100%;
+                        width: 22rem;
+                        font-size: 2rem;
+                        text-align: center;
+                        line-height: 6rem;
+                        color: @dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ ::-webkit-scrollbar {
+    width: 1px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
